@@ -1,205 +1,294 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Houssam-Karawan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #000;
-      color: #FFA500;
-      line-height: 1.6;
-    }
-    header {
-      background: #111;
-      padding: 40px 20px 20px;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(255, 165, 0, 0.2);
-    }
-    header h1 {
-      font-size: 3rem;
-      color: #FFA500;
-    }
-    header p {
-      color: #ccc;
-      font-size: 1.2rem;
-    }
-    nav {
-      position: sticky;
-      top: 0;
-      background-color: #1a1a1a;
-      display: flex;
-      justify-content: center;
-      padding: 15px;
-      z-index: 1000;
-    }
-    nav a {
-      color: #FFA500;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-      animation: fadeIn 1s ease-in;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .card {
-      background: #111;
-      border-radius: 12px;
-      padding: 25px;
-      margin-bottom: 30px;
-      box-shadow: 0 0 15px rgba(255, 165, 0, 0.2);
-    }
-    h2 {
-      margin-bottom: 20px;
-      font-size: 1.8rem;
-      color: #FFA500;
-    }
-    a.button {
-      display: inline-block;
-      background-color: #FFA500;
-      color: #000;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
-      transition: background-color 0.3s;
-    }
-    a.button:hover {
-      background-color: #fff;
-      color: #000;
-    }
-    ul.cert-list {
-      list-style: disc;
-      padding-left: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background-color: #1a1a1a;
-      color: #888;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houssam-Karawan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000; /* Black background */
+            color: #FFA500; /* Orange text for general content */
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: #111; /* Slightly lighter black for header */
+            padding: 40px 20px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(255, 165, 0, 0.2); /* Subtle orange shadow */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #FFA500; /* Orange for main title */
+        }
+
+        header p {
+            color: #ccc; /* Lighter grey for subtitle */
+            font-size: 1.2rem;
+        }
+
+        /* Navigation Styles */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #1a1a1a; /* Darker black for navigation */
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #FFA500; /* Orange for navigation links */
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff; /* White on hover */
+        }
+
+        /* Section Styles */
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            background: #111; /* Slightly lighter black for cards */
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.2); /* Orange shadow for cards */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #FFA500; /* Orange for section headings */
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* Button Styles */
+        a.button {
+            display: inline-block;
+            background-color: #FFA500; /* Orange button background */
+            color: #000; /* Black button text */
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        a.button:hover {
+            background-color: #fff; /* White on hover */
+            color: #000; /* Black text on hover */
+        }
+
+        /* List Styles */
+        ul.cert-list {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        ul.cert-list li {
+            margin-bottom: 8px;
+        }
+
+        /* Contact Form Styles */
+        .contact-form-container {
+            background: #111;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.2);
+            max-width: 600px; /* Limit width of contact form */
+            margin: 40px auto; /* Center the form with some margin */
+        }
+
+        .app-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #FFA500;
+            margin-bottom: 25px;
+            line-height: 1;
+        }
+
+        .app-title span {
+            display: block;
+        }
+
+        .app-contact {
+            text-align: center;
+            color: #ccc;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .app-form-group {
+            margin-bottom: 20px;
+        }
+
+        .app-form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            background-color: #222;
+            color: #fff;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .app-form-control:focus {
+            outline: none;
+            border-color: #FFA500;
+        }
+
+        .app-form-group.message .app-form-control {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .app-form-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .app-form-button {
+            background-color: #FFA500;
+            color: #000;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .app-form-button:hover {
+            background-color: #fff;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #1a1a1a; /* Darker black for footer */
+            color: #888; /* Grey text for footer */
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>the.karawan-tech</h1>
-    <p>Portfolio de Houssam Karawan</p>
-  </header>
+    <header>
+        <h1>the.karawan-tech</h1>
+        <p>Portfolio de Houssam Karawan</p>
+    </header>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#cv">CV</a>
-    <a href="#certificats">Certificats</a>
-    <a <div class="background">
-  <div class="container">
-    <div class="screen">
-      <div class="screen-header">
-        <div class="screen-header-left">
-          <div class="screen-header-button close"></div>
-          <div class="screen-header-button maximize"></div>
-          <div class="screen-header-button minimize"></div>
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#cv">CV</a>
+        <a href="#certificats">Certificats</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="card">
+        <h2>À propos de moi</h2>
+        <p>Je m'appelle <strong>Houssam Karawan</strong>, étudiant en 1ère année à l'OFPPT dans la filière Infrastructure Digitale option Systèmes & Réseaux. J’ai effectué un stage au sein de l’entreprise Orange, où j’ai développé mes compétences techniques dans le domaine IT. Passionné par les technologies réseau, je travaille actuellement sur un projet personnel nommé <strong>IT-GOLD</strong>.</p>
+    </section>
+
+    <section id="portfolio" class="card">
+        <h2>Mon Portfolio</h2>
+        <p>Cette section est dédiée à mes projets. N'hésitez pas à jeter un coup d'œil à ce que j'ai réalisé!</p>
+        </section>
+
+    <section id="cv" class="card">
+        <h2>Mon CV</h2>
+        <p>Tu peux télécharger mon CV en cliquant sur le bouton ci-dessous :</p>
+        <a class="button" href="Blue and White Clean and Professional Resume.pdf" download>Télécharger le CV (PDF)</a>
+    </section>
+
+    <section id="certificats" class="card">
+        <h2>Mes Certificats</h2>
+        <p>Voici les certificats que j'ai obtenus :</p>
+        <ul>
+            <li><a href="linux fendamental.pdf" download>Télécharger Linux Fendamental (PDF)</a></li>
+            <li><a href="certificat-microsoft.pdf" download>Télécharger Certificat Microsoft (PDF)</a></li>
+            <li><a href="certificat-aws.pdf" download>Télécharger Certificat AWS (PDF)</a></li>
+        </ul>
+        <ul class="cert-list">
+            <li><strong>Cisco</strong> : Networking Basics, Introduction to Cybersecurity, Network Addressing & Troubleshooting, CCNA (cours avancé)</li>
+            <li><strong>Microsoft</strong> : Build a Computer Vision App with Azure, Deploy & Manage DHCP</li>
+            <li><strong>AWS</strong> : AWS Cloud Essentials</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <div class="contact-form-container">
+            <div class="app-title">
+                <span>CONTACT</span>
+                <span>US</span>
+            </div>
+            <div class="app-contact">
+                CONTACT INFO : +62 81 314 928 595
+            </div>
+            <div class="app-form">
+                <div class="app-form-group">
+                    <input class="app-form-control" placeholder="NAME" value="Houssam Karawan">
+                </div>
+                <div class="app-form-group">
+                    <input class="app-form-control" placeholder="EMAIL">
+                </div>
+                <div class="app-form-group">
+                    <input class="app-form-control" placeholder="CONTACT NO">
+                </div>
+                <div class="app-form-group message">
+                    <textarea class="app-form-control" placeholder="MESSAGE"></textarea>
+                </div>
+                <div class="app-form-buttons">
+                    <button class="app-form-button">CANCEL</button>
+                    <button class="app-form-button">SEND</button>
+                </div>
+            </div>
         </div>
-        <div class="screen-header-right">
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-        </div>
-      </div>
-      <div class="screen-body">
-        <div class="screen-body-item left">
-          <div class="app-title">
-            <span>CONTACT</span>
-            <span>US</span>
-          </div>
-          <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
-        </div>
-        <div class="screen-body-item">
-          <div class="app-form">
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="NAME" value="Krisantus Wanandi">
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="EMAIL">
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="CONTACT NO">
-            </div>
-            <div class="app-form-group message">
-              <input class="app-form-control" placeholder="MESSAGE">
-            </div>
-            <div class="app-form-group buttons">
-              <button class="app-form-button">CANCEL</button>
-              <button class="app-form-button">SEND</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="credits">
-      inspired by
-      <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
-        <svg class="dribbble" viewBox="0 0 200 200">
-          <g stroke="#ffffff" fill="none">
-            <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
-            <path d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345" stroke-width="20"></path>
-            <path d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951" stroke-width="20"></path>
-            <path d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103" stroke-width="20"></path>
-          </g>
-        </svg>
-        Gururaj
-      </a>
-    </div>
-  </div>
-</div>href="#contact">Contact</a> 
-  </nav>
+    </section>
 
-  <section id="about" class="card">
-    <h2>À propos de moi</h2>
-    <p>Je m'appelle <strong>Houssam Karawan</strong>, étudiant en 1ère année à l'OFPPT dans la filière Infrastructure Digitale option Systèmes & Réseaux. J’ai effectué un stage au sein de l’entreprise Orange, où j’ai développé mes compétences techniques dans le domaine IT. Passionné par les technologies réseau, je travaille actuellement sur un projet personnel nommé <strong>IT-GOLD</strong>.</p>
-  </section>
-
-  <section id="cv" class="card">
-    <h2>Mon CV</h2>
-    <p>Tu peux télécharger mon CV en cliquant sur le bouton ci-dessous :</p>
-    <a class="button" href="Blue and White Clean and Professional Resume.pdf" download>Télécharger le CV (PDF)</a>
-  </section>
-
-  <section id="certificats" class="card">
-    <h2>Mes Certificats</h2>
-    <ul>
-  <li><a href="linux fendamental.pdf" download>Télécharger Linux fendamental (PDF)</a></li>
-  <li><a href="certificat-microsoft.pdf" download>Télécharger Certificat Microsoft (PDF)</a></li>
-  <li><a href="certificat-aws.pdf" download>Certificat AWS</a></li>
-    </ul>
-    <ul class="cert-list">
-      <li><strong>Cisco</strong> : Networking Basics, Introduction to Cybersecurity, Network Addressing & Troubleshooting, CCNA (cours avancé)</li>
-      <li><strong>Microsoft</strong> : Build a Computer Vision App with Azure, Deploy & Manage DHCP</li>
-      <li><strong>AWS</strong> : AWS Cloud Essentials</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Houssam Karawan — Tous droits réservés.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Houssam Karawan — Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
