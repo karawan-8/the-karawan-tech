@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Houssam Karawan</title>
+
+  <!-- Feuilles de style externes -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #111;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo span {
+      color: #00bcd4;
+    }
+
+    .navbar {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .gradient-btn {
+      padding: 0.5rem 1rem;
+      background: linear-gradient(45deg, #00bcd4, #2196f3);
+      border: none;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .home-content {
+      max-width: 800px;
+      text-align: left; /* Texte aligné à gauche */
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .home-img img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center; /* Centrer horizontalement */
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center; /* Centrer horizontalement */
+      margin-top: 1rem;
+    }
+
+    .social-icons a {
+      font-size: 1.5rem;
+      color: #2196f3;
+    }
+
+    .btn-group .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #2196f3;
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    .about-img img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .about-content a {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    .services {
+      margin-top: 4rem;
+    }
+
+    .services-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .service-box {
+      background-color: #f9f9f9;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #111;
+      color: #fff;
+      margin-top: 3rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      .home {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+
+      .home-content {
+        flex: 1;
+      }
+
+      .home-img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .about {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .services-container {
+        flex-direction: row;
+      }
+
+      .service-box {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#home" class="logo">Houssam <span>Karawan</span></a>
+    <i class="bx bx-menu" id="menu-icon" aria-label="Menu principal"></i>
+
+    <nav class="navbar">
+      <a href="#home"><i class="bx bx-home"></i> Accueil</a>
+      <a href="#about"><i class='bx bxs-graduation'></i> Certifications</a>
+      <a href="#services"><i class="bx bx-info-circle"></i> Informations</a>
+    </nav>
+
+    <button class="gradient-btn">Me contacter</button>
+  </header>
+
+  <main>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>👋 Hello, I’m <span>Houssam Karawan</span></h1>
+        <p>
+          Welcome to my personal website!<br><br>
+          I’m a passionate IT student specializing in network infrastructure, systems administration, and automation. I’m currently building my career around technologies like Linux (Red Hat/Ubuntu), Active Directory, virtualization, Docker, and cybersecurity.<br><br>
+          I believe in continuous learning, practical experience, and solving real-world problems with efficient IT solutions.<br><br>
+          On this website, you’ll find:<br><br>
+          🧠 My skills and areas of expertise<br>
+          📜 Certifications I have earned<br>
+          💼 Professional experiences and internships<br>
+          ⚙️ Projects I’ve worked on, including my automation tools<br>
+          📫 How to contact me for collaboration or job opportunities<br><br>
+          Thanks for visiting my website — feel free to explore and connect!
+        </p>
+
+        <div class="social-icons">
+          <a href="#"><i class='bx bxl-whatsapp' aria-label="WhatsApp"></i></a>
+          <a href="https://www.linkedin.com/in/houssam-karawan-428150332/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin-square" aria-label="LinkedIn"></i></a>
+          <a href="#"><i class="bx bxl-twitter" aria-label="Twitter"></i></a>
+          <a href="mailto:houssamkarwanbooking@gmail.com"><i class="bx bxl-gmail" aria-label="Email"></i></a>
+        </div>
+
+        <div class="btn-group">
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="houssam.jpg" alt="Photo de Houssam Karawan" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <h2><span>Certifications</span></h2>
+        <img src="houssam.jpg" alt="Houssam Karawan" loading="lazy" />
+      </div>
+
+      <div class="about-content">
+        <p>
+          <a href="https://www.credly.com/badges/ac48f769" target="_blank">Linux Fundamentals</a><br>
+          <a href="https://www.credly.com/badges/d2957ff9" target="_blank">Operating Systems Basics</a><br>
+          <a href="https://www.coursera.org/account/accomplishments/verify/T8Z0NADPDSE7" target="_blank">Computer Vision App with Azure</a><br>
+          <a href="https://www.credly.com/badges/aad9f952" target="_blank">Computer Hardware Basics</a><br>
+          <a href="https://www.credly.com/badges/1db7310e" target="_blank">Introduction to Cybersecurity</a><br>
+          <a href="https://www.credly.com/badges/96366450" target="_blank">Network Addressing & Troubleshooting</a><br>
+          <a href="https://www.credly.com/badges/e12c7579" target="_blank">Networking Basics</a><br>
+          <a href="https://www.alphorm.com/Attestation/bM0xzVRgKXdw2" target="_blank">Cisco CCNA</a>
+        </p>
+        <a href="#" class="btn">Lire plus</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Informations</h2>
+
+      <div class="services-container">
+        <div class="service-box">
+          <div class="service-info">
+            <center>
+              <i class="bx bx-desktop"></i>
+              <h4>SOFTWARE</h4>
+            </center>
+            <ul>
+              <li>Linux (Ubuntu, AlmaLinux, RedHat)</li>
+              <li>Windows</li>
+              <li>VirtualBox</li>
+              <li>VMware Workstation</li>
+              <li>Docker</li>
+              <li>GNS3</li>
+              <li>Wireshark</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <center>
+              <i class="bx bx-target-lock"></i>
+              <h4>TECHNICAL SKILLS</h4>
+            </center>
+            <ul>
+              <li>Mécanique des fluides</li>
+              <li>Analyse d'articles scientifiques</li>
+              <li>Installations photovoltaïques</li>
+              <li>Efficacité énergétique</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <center>
+              <i class="bx bx-briefcase"></i>
+              <h4>EXPERIENCE</h4>
+            </center>
+            <p>
+                          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Me Contacter</h2>
+      <form action="mailto:houssamkarwanbooking@gmail.com" method="post" enctype="text/plain" style="max-width:600px; margin:auto; display:flex; flex-direction:column; gap:1rem;">
+        <input type="text" name="name" placeholder="Votre nom" required style="padding:10px; border-radius:8px; border:1px solid #ccc;">
+        <input type="email" name="email" placeholder="Votre email" required style="padding:10px; border-radius:8px; border:1px solid #ccc;">
+        <textarea name="message" rows="5" placeholder="Votre message" required style="padding:10px; border-radius:8px; border:1px solid #ccc;"></textarea>
+        <button type="submit" style="padding:10px; border:none; border-radius:8px; background-color:#2196f3; color:white; cursor:pointer;">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; </strong>2025 Houssam Karawan. Tous droits réservés.</strong>
+  </footer>
+</body>
+</html>
